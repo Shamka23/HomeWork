@@ -5,10 +5,19 @@ public class Main {
         sum(2, 3);
         sum(-1, 5);
 
+        System.out.println();
+
         System.out.println(isEven(4));
         System.out.println(isEven(7));
 
+        System.out.println();
+
         System.out.println(max(9, 28, 1));
+
+        System.out.println();
+
+        System.out.println(cToF(0));
+        System.out.println(cToF(100));
     }
 
     private static void sum(int firstCount, int secondCount) {
@@ -31,5 +40,9 @@ public class Main {
             return thirdCount;
         }
         return 0;
+    }
+
+    private static double cToF(double c) {
+        return (c * 9 / 5) + 32;
     }
 }
