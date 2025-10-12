@@ -11,6 +11,8 @@ public class Main {
         System.out.println(isLeap(1900));
         System.out.println(isLeap(2024));
         System.out.println();
+
+        System.out.println(ticketPrice(80));
     }
 
     private static String sign(int n) {
@@ -32,6 +34,18 @@ public class Main {
             return true;
         } else {
             return false;
+        }
+    }
+
+    private static int ticketPrice(int age) {
+        if (age < 6) {
+            return 0;
+        } else if (age <= 17) {
+            return 50;
+        } else if (age <= 64){
+            return 100;
+        } else {
+            return 60;
         }
     }
 }
