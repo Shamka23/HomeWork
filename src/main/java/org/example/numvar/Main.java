@@ -12,7 +12,7 @@ public class Main {
 
         System.out.println();
 
-        System.out.println(max(9, 28, 1));
+        System.out.println(max(109, 28, 89));
 
         System.out.println();
 
@@ -28,15 +28,15 @@ public class Main {
         return equivalent % 2 == 0;
     }
 
-    private static int max(int firstCount, int secondCount, int thirdCount) {
-        if (firstCount > secondCount && firstCount > thirdCount) {
-            return firstCount;
-        } else if (secondCount > firstCount && secondCount > thirdCount) {
-            return secondCount;
-        } else if (thirdCount > firstCount && thirdCount > secondCount) {
-            return thirdCount;
+    private static int max(int firstNumber, int secondNumber, int thirdNumber) {
+        if (firstNumber > secondNumber && firstNumber > thirdNumber) {
+            return firstNumber;
+        } else if (secondNumber > firstNumber && secondNumber > thirdNumber) {
+            return secondNumber;
+        } else {
+            return thirdNumber;
         }
-        return 0;
+
     }
 
     private static double cToF(double c) {
