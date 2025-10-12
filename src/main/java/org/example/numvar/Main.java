@@ -2,8 +2,7 @@ package org.example.numvar;
 
 public class Main {
     public static void main(String[] args) {
-        sum(2, 3);
-        sum(-1, 5);
+        System.out.println(sum(2, 5));
 
         System.out.println();
 
@@ -20,8 +19,8 @@ public class Main {
         System.out.println(cToF(100));
     }
 
-    private static void sum(int firstCount, int secondCount) {
-        System.out.println(firstCount + secondCount);
+    private static int sum(int firstNumber, int secondNumber) {
+      return firstNumber + secondNumber;
     }
 
     private static boolean isEven(int equivalent) {
