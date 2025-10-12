@@ -25,10 +25,7 @@ public class Main {
     }
 
     private static boolean isEven(int equivalent) {
-        if (equivalent % 2 == 1) {
-            return false;
-        }
-        return true;
+        return equivalent % 2 == 0;
     }
 
     private static int max(int firstCount, int secondCount, int thirdCount) {
