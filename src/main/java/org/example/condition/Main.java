@@ -1,6 +1,10 @@
 package org.example.condition;
 
 public class Main {
+    public static final String ZERO = "zero";
+    public static final String NEGATIVE = "negative";
+    public static final String POSITIVE = "positive";
+
     public static void main(String[] args) {
         System.out.println(getSign(-10));
         System.out.println(getSign(0));
@@ -13,15 +17,16 @@ public class Main {
         System.out.println();
 
         System.out.println(ticketPrice(80));
+
     }
 
     private static String getSign(int number) {
         if (number == 0) {
-            return "zero";
+            return ZERO;
         } else if (number < 0) {
-            return "negative";
+            return NEGATIVE;
         } else {
-            return "positive";
+            return POSITIVE;
         }
     }
 
@@ -42,7 +47,7 @@ public class Main {
             return 0;
         } else if (age <= 17) {
             return 50;
-        } else if (age <= 64){
+        } else if (age <= 64) {
             return 100;
         } else {
             return 60;
