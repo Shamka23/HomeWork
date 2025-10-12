@@ -15,8 +15,8 @@ public class Main {
 
         System.out.println();
 
-        System.out.println(cToF(0));
-        System.out.println(cToF(100));
+        System.out.println(convertTempToFahrenheitfromCelcius(0));
+        System.out.println(convertTempToFahrenheitfromCelcius(100));
     }
 
     private static int sum(int firstNumber, int secondNumber) {
@@ -38,7 +38,7 @@ public class Main {
 
     }
 
-    private static double cToF(double c) {
-        return (c * 9 / 5) + 32;
+    private static double convertTempToFahrenheitfromCelcius(double Celsius) {
+        return (Celsius * 9 / 5) + 32;
     }
 }
