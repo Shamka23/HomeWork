@@ -1,9 +1,9 @@
 package org.example.condition;
 
 public class Main {
-    public static final String ZERO = "zero";
-    public static final String NEGATIVE = "negative";
-    public static final String POSITIVE = "positive";
+    private static final String ZERO = "zero";
+    private static final String NEGATIVE = "negative";
+    private static final String POSITIVE = "positive";
 
     public static void main(String[] args) {
         System.out.println(getSign(-10));
