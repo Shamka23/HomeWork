@@ -10,33 +10,33 @@ public class Main {
         System.out.println(positives(new int[]{-1, 0, 2, 5}));
     }
 
-    private static int min(int[] array) {
-        int min = Integer.MAX_VALUE;
-        for (int i : array) {
-            if (i < min) {
-                min = i;
+    private static int min(int[] numberArray) {
+        int max = Integer.MAX_VALUE;
+        for (int value : numberArray) {
+            if (value < max) {
+                max = value;
             }
         }
-        return min;
+        return max;
     }
 
-    private static int sumEven(int[] array) {
+    private static int sumEven(int[] numberArray) {
         int sum = 0;
-        for (int i : array) {
-            if (i % 2 == 0) {
-                sum += i;
+        for (int value : numberArray) {
+            if (value % 2 == 0) {
+                sum += value;
             }
         }
         return sum;
     }
 
-    private static List<Integer> positives(int[] array) {
-        ArrayList<Integer> arrayList = new ArrayList<>();
-        for (int value : array) {
+    private static List<Integer> positives(int[] numberArray) {
+        List<Integer> result = new ArrayList<>();
+        for (int value : numberArray) {
             if(value > 0) {
-                arrayList.add(value);
+                result.add(value);
             }
         }
-        return arrayList;
+        return result;
     }
 }
