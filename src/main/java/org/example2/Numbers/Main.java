@@ -24,25 +24,21 @@ public class Main {
 //        return Math.abs(number); // Либо можно так
     }
 
-    private static boolean isPowerOfTwo(int n) {
-        if (n > 0) {
-            return (n & n - 1) == 0;
-        } else {
-            return false;
-        }
+    private static boolean isPowerOfTwo(int number) {
+        return number % 2 == 0 || number - 1 == 0;
     }
 
-    private static long getFactorial(int n) {
+    private static long getFactorial(int number) {
         long result = 1;
         int count = 1;
-        if (n < 0) {
+        if (number < 0) {
             throw new IllegalArgumentException("Невозможно вывести факториал для отрицательного числа");
         } else {
-            while (count <= n) {
+            while (count <= number) {
                 result = result * count;
                 count++;
             }
-//            for (int i = 1; i <= n; i++) { так тоже можно
+//            for (int i = 1; i <= number; i++) { так тоже можно
 //                result = result * i;
 //            }
             return result;
