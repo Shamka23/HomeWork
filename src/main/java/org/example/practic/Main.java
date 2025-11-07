@@ -1,11 +1,15 @@
 package org.example.practic;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println(isStrong("Shama"));
         System.out.println(isStrong("ShaMa099"));
         System.out.println(isStrong("Shamashama"));
         System.out.println(isStrong("12374236123"));
+        int[] result = charFreqLowerCase("abBA!");
+        System.out.println(Arrays.toString(result));
     }
 
     private static boolean isStrong(String password) {
@@ -27,6 +31,20 @@ public class Main {
         } else {
             return false;
         }
+    }
+
+    private static int[] charFreqLowerCase(String text) {
+        int[] result = new int[26];
+        for (int i = 0; i < text.length(); i++) {
+            char symbol = text.charAt(i);
+            symbol = Character.toLowerCase(symbol);
+
+            if (symbol >= 'a' && symbol <= 'z') {
+                int index = symbol - 'a';
+                result[index]++;
+            }
+        }
+        return result;
     }
 }
 
